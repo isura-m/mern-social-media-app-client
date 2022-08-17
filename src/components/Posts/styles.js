@@ -1,12 +1,17 @@
-import React from "react";
-import { Container, AppBar, Typography, Grow, Grid } from "@material-ui/core";
+import { makeStyles } from "@material-ui/core/styles";
 
-const App = () => {
-  return (
-    <div>
-      <h1>App!</h1>
-    </div>
-  );
-};
-
-export default App;
+export default makeStyles((theme) => ({
+  mainContainer: {
+    display: "flex",
+    alignItems: "center",
+  },
+  smMargin: {
+    margin: theme.spacing(1),
+  },
+  actionDiv: {
+    textAlign: "center",
+  },
+  heading: {
+    color: "rgba(0,183,255, 1)",
+  },
+}));
